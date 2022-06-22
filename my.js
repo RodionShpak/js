@@ -1001,7 +1001,26 @@
 
 
                                 //============== Метод concat() ==============
+        // Об'єднує два або більше масивів в один. Він не змінює масив, на якому викликається, а повертає новий. 
+        // Порядок аргументів методу впливає на порядок елементів нового масиву.
 
+// const oldClients = ["Mango", "Ajax", "Poly", "Kiwi"];
+// const newClients = ["Monkong", "Singu"];
+
+// const allClientsWithOldFirst = oldClients.concat(newClients);
+// console.log(allClientsWithOldFirst); // ["Mango", "Ajax", "Poly", "Kiwi", "Monkong", "Singu"]
+
+// const allClientsWithNewFirst = newClients.concat(oldClients);
+// console.log(allClientsWithNewFirst); // ["Monkong", "Singu", "Mango", "Ajax", "Poly", "Kiwi"]
+
+// console.log(oldClients); // ["Mango", "Ajax", "Poly", "Kiwi"]
+// console.log(newClients); // ["Monkong", "Singu"]
+
+
+
+
+
+                                //============== Метод concat() ==============
 
 
 
