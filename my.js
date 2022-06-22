@@ -844,5 +844,89 @@
 
 
 
-                                //============== Метод includes() ==============
+                                //============== Методи push() і pop() ==============
+        // Додають або видаляють крайні елементи масиву.Працюють тільки з крайнім лівим і крайнім правим елементом,
+        // і не можуть вставити або видалити елемент з довільної позиції.
+        // array methods
+        // Метод push() додає один або декілька елементів наприкінці масиву,
+        // без необхідності зазначати індекси елементів, що додаються.
+        // Повертає довжину масиву після додавання елементів.
+
+        // push method
+// const numbers = [];
+
+// numbers.push(1);
+// console.log(numbers); // [1]
+
+// numbers.push(2);
+// console.log(numbers); // [1, 2]
+
+// numbers.push(3);
+// console.log(numbers); // [1, 2, 3]
+
+// numbers.push(4);
+// console.log(numbers); // [1, 2, 3, 4]
+
+// numbers.push(5);
+// console.log(numbers); // [1, 2, 3, 4, 5]
+
+        // Метод pop() видаляє останній елемент з кінця масиву і повертає видалений елемент.
+        // Якщо масив порожній, метод повертає undefined.
+
+        // pop method
+// const numbers = [1, 2, 3, 4, 5];
+
+// console.log(numbers.pop()); //  5
+// console.log(numbers); // [1, 2, 3, 4]
+
+// console.log(numbers.pop()); //  4
+// console.log(numbers); // [1, 2, 3]
+
+// console.log(numbers.pop()); //  3
+// console.log(numbers); // [1, 2]
+
+// console.log(numbers.pop()); //  2
+// console.log(numbers); // [1]
+
+// console.log(numbers.pop()); //  1
+// console.log(numbers); // []
+
+
+
+
+
+                                //============== Метод slice() ==============
+        // slice(begin, end) повертає новий масив, що містить копію частини вихідного масиву,
+        // не змінюючи його.Копія створюється з begin і до, але не включно, end - індекси елементів вихідного масиву.
+
+// slice method
+// const clients = ["Mango", "Ajax", "Poly", "Kiwi"];
+// console.log(clients.slice(1, 3)); // ["Ajax", "Poly"]
+
+        //Якщо begin і end не зазначені, буде створена повна копія вихідного масиву.
+
+// const clients = ["Mango", "Ajax", "Poly", "Kiwi"];
+// console.log(clients.slice()); // ["Mango", Ajax", "Poly", "Kiwi"]
+
+        // Якщо не зазначено end, копіювання буде зі start і до кінця вихідного масиву.
+
+// const clients = ["Mango", "Ajax", "Poly", "Kiwi"];
+// console.log(clients.slice(1)); // ["Ajax", "Poly", "Kiwi"]
+// console.log(clients.slice(2)); // ["Poly", "Kiwi"]
+
+        // Якщо значення start від'ємне, а end не зазначено - будуть скопійовані останні start елементи
+
+// const clients = ["Mango", "Ajax", "Poly", "Kiwi"];
+// console.log(clients.slice(-2)); // ["Poly", "Kiwi"]
+
+
+
+
+
+                                //============== Метод slice() ==============
+
+
+
+
+
 
